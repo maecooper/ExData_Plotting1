@@ -15,7 +15,7 @@ FebUsage$DateTime <- with(FebUsage,dmy_hms(paste(Date,Time)))
 #open png file
 png("plot2.png")
 
-#create histogram
+#create line graph
 with(FebUsage, plot(DateTime, Global_active_power, type="n",ylab="Global Active Power (kilowats)",xlab=""))
 with(FebUsage,lines(DateTime,Global_active_power))
 
